@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		483C41DFA8399EF990BF2756 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9DBD0576942435707B5E34 /* Palette.swift */; };
 		588E1C4F2BE8587EEF13D007 /* WaterEjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7261B5E8EBA44CD8F273858 /* WaterEjectApp.swift */; };
 		80E9F75134DF4F2AF564E57F /* EjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F73E9734EC5844E012E797E /* EjectController.swift */; };
 		8510719027B958DDC6B46579 /* RingOrb.metal in Sources */ = {isa = PBXBuildFile; fileRef = BE1D1000E21E8699356C55F0 /* RingOrb.metal */; };
@@ -23,7 +22,6 @@
 		5F73E9734EC5844E012E797E /* EjectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjectController.swift; sourceTree = "<group>"; };
 		66E148C43BD729A9B734AF13 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		6EB944493F15C6519E4CBD6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7F9DBD0576942435707B5E34 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		85BADA79B289486A671E554B /* RingOrbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingOrbView.swift; sourceTree = "<group>"; };
 		95AC6713A23ACE15A32BF14B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		983F7D3F57D844DE59509E85 /* WaterEject.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WaterEject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +40,6 @@
 				6EB944493F15C6519E4CBD6B /* ContentView.swift */,
 				5F73E9734EC5844E012E797E /* EjectController.swift */,
 				0E9C2DF673E31A0343604B26 /* Info.plist */,
-				7F9DBD0576942435707B5E34 /* Palette.swift */,
 				BE1D1000E21E8699356C55F0 /* RingOrb.metal */,
 				85BADA79B289486A671E554B /* RingOrbView.swift */,
 				BA4D965571A7457E4FF4BCD2 /* ToneGenerator.swift */,
@@ -144,7 +141,6 @@
 			files = (
 				FEE2E7CB966938C8D5AC0644 /* ContentView.swift in Sources */,
 				80E9F75134DF4F2AF564E57F /* EjectController.swift in Sources */,
-				483C41DFA8399EF990BF2756 /* Palette.swift in Sources */,
 				8510719027B958DDC6B46579 /* RingOrb.metal in Sources */,
 				DFFC93F8AC7D26A0ABFC9B5E /* RingOrbView.swift in Sources */,
 				92E140D247C851F146777AEC /* ToneGenerator.swift in Sources */,

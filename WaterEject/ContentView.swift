@@ -26,11 +26,6 @@ struct ContentView: View {
             }
         }
         .ignoresSafeArea()
-        .overlay(alignment: .top) {
-            warnings
-                .padding(.top, 8)
-                .padding(.horizontal, 24)
-        }
         .contentShape(Rectangle())
         .gesture(orbGesture)
         .accessibilityElement()
@@ -45,7 +40,6 @@ struct ContentView: View {
             }
         }
         .animation(.smooth(duration: 0.35), value: readoutText)
-        .animation(.smooth(duration: 0.35), value: warningItems.map(\.text))
         .sensoryFeedback(.selection, trigger: manualStep)
         .task(id: controller.didComplete) {
             guard controller.didComplete else {
@@ -84,35 +78,6 @@ struct ContentView: View {
             .contentTransition(.numericText(countsDown: true))
             .opacity(readoutText == nil ? 0 : 1)
             .allowsHitTesting(false)
-    }
-
-    // MARK: - Warnings
-
-    @ViewBuilder
-    private var warnings: some View {
-        let items = warningItems
-        if !items.isEmpty {
-            VStack(spacing: 6) {
-                ForEach(items, id: \.text) { item in
-                    Label(item.text, systemImage: item.icon)
-                        .font(.footnote.weight(.medium))
-                        .foregroundStyle(Palette.warning)
-                }
-            }
-            .transition(.opacity)
-            .allowsHitTesting(false)
-        }
-    }
-
-    private var warningItems: [(icon: String, text: String)] {
-        var items: [(icon: String, text: String)] = []
-        if !controller.isUsingSpeaker {
-            items.append(("headphones", "请断开耳机或蓝牙"))
-        }
-        if let message = controller.errorMessage {
-            items.append(("exclamationmark.triangle.fill", message))
-        }
-        return items
     }
 
     // MARK: - Interaction
@@ -162,9 +127,9 @@ struct ContentView: View {
 
     private var accessibilityLabel: String {
         if controller.isPlaying {
-            return controller.mode == .auto ? "正在排水，轻点停止" : "手动 \(Int(controller.manualFrequency)) 赫兹，轻点停止"
+            return controller.mode == .auto ? "Ejecting water, tap to stop" : "\(Int(controller.manualFrequency)) Hz, tap to stop"
         }
-        return "开始排水"
+        return "Start water eject"
     }
 }
 
