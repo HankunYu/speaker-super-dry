@@ -25,4 +25,5 @@ targets:
       properties:
         CFBundleDisplayName: Speaker Super Dry
         UILaunchScreen: {}
+        UIStatusBarHidden: true
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]

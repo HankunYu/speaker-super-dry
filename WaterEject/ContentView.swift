@@ -26,6 +26,7 @@ struct ContentView: View {
             }
         }
         .ignoresSafeArea()
+        .statusBarHidden()
         .contentShape(Rectangle())
         .gesture(orbGesture)
         .accessibilityElement()
