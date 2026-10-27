@@ -24,6 +24,7 @@ targets:
       path: SpeakerSuperDry/Info.plist
       properties:
         CFBundleDisplayName: Speaker Super Dry
+        ITSAppUsesNonExemptEncryption: false
         UILaunchScreen: {}
         UIStatusBarHidden: true
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
