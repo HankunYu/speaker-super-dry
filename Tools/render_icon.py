@@ -1,6 +1,6 @@
 """Render the app icon (five colored wavy rings) into AppIcon.appiconset.
 
-Mirrors the ring math in WaterEject/RingOrb.metal, frozen at a fixed pose.
+Mirrors the ring math in SpeakerSuperDry/RingOrb.metal, frozen at a fixed pose.
 Usage: python3 Tools/render_icon.py
 """
 
@@ -11,7 +11,7 @@ from PIL import Image
 
 OUTPUT_SIZE = 1024
 SUPERSAMPLE = 2
-ICON_DIR = Path(__file__).resolve().parent.parent / "WaterEject/Assets.xcassets/AppIcon.appiconset"
+ICON_DIR = Path(__file__).resolve().parent.parent / "SpeakerSuperDry/Assets.xcassets/AppIcon.appiconset"
 
 PALETTE = np.array([
     [1.0, 0.25, 0.6],

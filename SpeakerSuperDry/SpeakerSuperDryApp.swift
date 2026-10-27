@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct WaterEjectApp: App {
+struct SpeakerSuperDryApp: App {
     @State private var controller = EjectController()
 
     var body: some Scene {

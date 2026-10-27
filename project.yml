@@ -1,4 +1,4 @@
-name: WaterEject
+name: SpeakerSuperDry
 options:
   bundleIdPrefix: com.hankun
   deploymentTarget:
@@ -9,19 +9,19 @@ settings:
   DEVELOPMENT_TEAM: 47GJJ2S5J8
   CODE_SIGN_STYLE: Automatic
 targets:
-  WaterEject:
+  SpeakerSuperDry:
     type: application
     platform: iOS
-    sources: [WaterEject]
+    sources: [SpeakerSuperDry]
     scheme: {}
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: com.hankun.watereject
+      PRODUCT_BUNDLE_IDENTIFIER: com.hankun.speakersuperdry
       TARGETED_DEVICE_FAMILY: "1"
       ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
       MARKETING_VERSION: "1.0"
       CURRENT_PROJECT_VERSION: "1"
     info:
-      path: WaterEject/Info.plist
+      path: SpeakerSuperDry/Info.plist
       properties:
         CFBundleDisplayName: Speaker Super Dry
         UILaunchScreen: {}
