@@ -73,7 +73,7 @@ struct ContentView: View {
                 return "\(Int(controller.manualFrequency.rounded())) Hz"
             }
         }
-        return showsDone ? "完成" : nil
+        return showsDone ? "Done" : nil
     }
 
     private var readout: some View {
